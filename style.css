@@ -1,0 +1,433 @@
+@font-face {
+    font-family: 'Master Of Break';
+    font-style: normal;
+    font-weight: 400;
+    src: url('https://mundgn-static.nos.jkt-1.neo.id/assets/demo/gold-rustic/css/master_of_break.ttf');
+}
+:root {
+    --plyr-color-main: #caa770;
+}
+.plyr__poster {
+    background-size: cover !important;
+    width: 100%;
+    height: 100%;
+}
+.video-player {
+    max-height: 700px;
+    width: 100%;
+}
+html, body {
+    font-family: 'Montserrat', sans-serif;
+}
+section label {
+    color: #fff;
+}
+section label:not(input[type="radio"] + label) {
+    font-weight: bold;
+}
+body {
+    background-color: #272928;
+    overflow-x: hidden;
+}
+footer::after {
+    background-image: url(https://mundgn-static.nos.jkt-1.neo.id/assets/demo/gold-rustic/img/footer-flower.webp);
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 300px;
+    height: 300px;
+    content: '';
+    position: absolute;
+    background-position: bottom;
+    left: 0;
+    bottom: 0;
+    z-index: -1;
+}
+footer::before {
+    background-image: url(https://mundgn-static.nos.jkt-1.neo.id/assets/demo/gold-rustic/img/footer-flower.webp);
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 300px;
+    height: 300px;
+    content: '';
+    position: absolute;
+    background-position: bottom;
+    right: 0;
+    bottom: 0;
+    z-index: -1;
+    transform: scaleX(-1);
+}
+.font-jalan {
+    font-family: 'Master Of Break', cursive;
+}
+.bg-overlay {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    z-index: 1;
+}
+html, body {
+    height: 100%;
+}
+.wrapper-cover {
+    height: 100%;
+    position: relative;
+}
+.wrapper-cover::after {
+    background: rgba(0, 0, 0, .6);
+    content: '';
+    width: 100%;
+    height: 100%;
+    display: block;
+    z-index: 1;
+    position: absolute;
+    bottom: 0;
+}
+.wrapper-cover .nama-mempelai {
+    font-size: 5rem;
+    margin-top: 20px;
+}
+.wrapper-cover .nama-mempelai .aksara,
+.wrapper-cover .pawiwahan-aksara,
+.wrapper-profile .aksara,
+.wrapper-galeri .aksara {
+    height: 45px;
+}
+.wrapper-cover .image {
+    width: 100%;
+    height: 100%;
+}
+.wrapper-cover .image img{
+    width: 100%;
+    object-fit: cover;
+    height: 100%;
+}
+.wrapper-cover .cover-bg {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+.wrapper-cover .wrapper-text {
+    position: absolute;
+    bottom: 80px;
+    z-index: 999;
+    width: 100%;
+    color: #fff;
+}
+.wrapper-cover .wrapper-text .invitation-text {
+    color:#caa770;
+    font-weight:bold;
+    text-align: center;
+}
+.wrapper-profile {
+    color: #fff;
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    padding: 100px 0;
+    font-size: 22px;
+}
+.wrapper-profile .content-profile {
+    width: 75%;
+    text-align: center;
+}
+.wrapper-profile .content-profile .profile-column > div {
+    width: 45%;
+}
+.wrapper-profile .content-profile .profile-column>span {
+    width: 10%;
+}
+.wrapper-profile .content-profile svg {
+    height: 25px;
+    width: 100%;
+}
+.wrapper-profile img.rounded-circle {
+    height: 250px;
+    width: 250px;
+    border: 10px solid #caa770;
+    margin-bottom: 15px;
+}
+.title {
+   font-size: 3rem;
+   color: #caa770;
+}
+.title-form {
+    color: #caa770;
+    font-weight: bold;
+}
+.btn-secondary {
+    background-color: #caa770;
+}
+.btn-secondary:hover, .btn-secondary:active {
+    background-color: #caa770 !important;
+    box-shadow: none !important;
+}
+.btn-secondary:focus, .btn-secondary:active {
+    background-color: #ac8d5d !important;
+    box-shadow: none !important;
+}
+.form-control:focus {
+    box-shadow: 0 0 0 .2rem rgb(202, 167, 112, .5);
+    border-color: #caa770;
+}
+.wrapper-profile span {
+    font-size: 4rem;
+    color: #caa770;
+}
+.wrapper-profile .name {    
+    font-size: 1.3rem;
+    color: #caa770;
+    letter-spacing: 3px;
+
+}
+.wrapper-video {
+    margin: 100px 0;
+}
+.wrapper-video video {
+    width: 100% !important;
+    object-fit: cover;
+}
+.wrapper-doa {
+    color: #fff;
+    display: flex;
+    flex-flow: row;
+}
+.wrapper-doa > div:last-child {
+    width: 60%;
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    padding: 50px 150px;
+}
+.wrapper-doa > div:first-child {
+    width: 40%;
+}
+.wrapper-doa .img-right {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+.wrapper-doa>div:last-child>p {
+    font-size: 20px;
+}
+.wrapper-doa > div:last-child > p:first-child {
+    color: #caa770;
+}
+.wrapper-lokasi {
+    display: flex;
+    align-items: center;
+    color: #fff;
+    flex-flow: column;
+    margin-top: 50px;
+}
+.wrapper-lokasi .background-image {
+    z-index: -1;
+}
+.wrapper-lokasi .ionicon {
+    height: 35px;
+    width: 35px;
+    fill: #fff;
+    margin-right: 8px;
+}
+.wrapper-lokasi .background-image::after {
+    background-color: rgba(0, 0, 0, .6);
+    position: absolute;
+    content: '';
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    top: 0;
+    left: 0;
+}
+.wrapper-lokasi .background-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+.wrapper-lokasi .content-lokasi {
+    display: flex;
+    align-items: center;
+    flex-flow: column;
+    font-size: 22px;
+    text-align: center;
+    background-color: rgba(0, 0, 0, .3);
+}
+.wrapper-lokasi .time {
+    font-size: 3.5rem;
+    margin-bottom: 30px;
+}
+.wrapper-lokasi .time div {
+    background-color: rgb(202, 167, 112, .5);
+    padding: 1px;
+    margin-right: 15px;
+    width: 170px;
+}
+.wrapper-lokasi .time div:last-child {
+    margin-right: 0px;
+}
+.wrapper-galeri {
+    color: #fff;
+    font-size: 22px;
+    display: flex;
+    align-items: center;
+    flex-flow: column;
+    text-align: center;
+    padding: 50px 0;
+}
+.content-galeri {
+    width: 40%;
+}
+.content-galeri .carousel img {
+    height: 900px;
+    object-fit: cover;
+}
+.audio-controls {
+    position: fixed;
+    bottom: 40px;
+    right: 40px;
+    z-index: 1;
+}
+.audio-controls > .btn-audio {
+    background-color: #fff;
+    height: 45px;
+    width: 45px;
+    border-radius: 50%;
+    outline: 0;
+    border: none;
+    box-shadow: 0px 3px 6px 0px rgba(0, 0, 0, 0.1), 0px 1px 3px 0px rgba(0, 0, 0, 0.08);
+}
+footer {
+    padding: 50px 0;
+    color: #fff;
+}
+@media screen and (min-width:768px) and (max-width:1199px) {
+    .wrapper-profile,
+    .wrapper-lokasi .content-lokasi {
+        font-size: 18px;
+    }
+    .wrapper-lokasi .time {
+        font-size: 3rem;
+    }
+    .wrapper-galeri {
+        font-size: 18px;
+    }
+    .content-galeri {
+        width: 75%;
+    }
+}
+@media screen and (max-width:991px) {
+    .wrapper-profile .content-profile .profile-column>div {
+        width: 100%;
+    }
+    .wrapper-profile .content-profile .profile-column>span {
+        width: 100%;
+        margin: 30px 0;
+    }
+}
+@media screen and (max-width:767px) {
+    .wrapper-lokasi .time {
+        font-size: 1.5rem;
+    }
+    .wrapper-lokasi .time div {
+        width: 100px;
+        padding: 10px;
+    }
+    footer::after {
+        width: 150px;
+        height: 150px;
+    }
+    footer::before {
+        width: 150px;
+        height: 150px;
+    }
+    .wrapper-profile img {
+        width: 180px;
+        height: 180px;
+    }
+    .wrapper-profile .content-profile {
+        width: 100%;
+        padding: 30px;
+        font-size: 18px;
+    }
+    .wrapper-profile .name {
+        font-size: 2rem;
+    }
+    .wrapper-video video {
+        height: auto;
+    }
+    .wrapper-cover .nama-mempelai {
+        font-size: 3.5rem;
+    }
+    .wrapper-cover .wrapper-text .invitation-text {
+        font-size: 1.2rem;
+        letter-spacing: 0.6rem;
+    }
+    .wrapper-cover .h5 {
+        font-size: 18px;
+    }
+    .wrapper-cover .nama-mempelai .aksara,
+    .wrapper-cover .pawiwahan-aksara,
+    .wrapper-profile .aksara,
+    .wrapper-galeri .aksara {
+        height: 36px;
+    }
+    .title {
+        font-size: 2.5rem;
+    }
+    .wrapper-doa {
+        flex-flow: column;
+    }
+    .wrapper-doa>div:first-child {
+        width: 100%;
+    }
+    .wrapper-doa>div:first-child>p {
+        font-size: 18px;
+    }
+    .wrapper-doa>div:last-child {
+        width: 100%;
+    }
+    .wrapper-lokasi .content-lokasi {
+        width: 100%;
+        font-size: 18px;
+        padding: 0 30px;
+    }
+    .content-galeri {
+        width: 100%;
+    }
+    .content-galeri p {
+        font-size: 18px;
+        padding: 0 30px;
+    }
+    .content-galeri .carousel img {
+        height: 900px;
+    }
+    .wrapper-lokasi iframe {
+        height: 300px;
+    }
+}
+@media screen and (max-width:575px) {
+    .content-galeri .carousel img {
+        height: 700px;
+    }
+    footer {
+        padding-bottom: 150px;
+    }
+    .wrapper-lokasi .time {
+        font-size: 1.5rem;
+    }
+    .wrapper-lokasi .time div {
+        width: 25%;
+        padding: 10px;
+        margin-bottom: 15px;
+    }
+    .wrapper-cover .nama-mempelai {
+        font-size: 2.5rem;
+    }
+}
+@media screen and (max-width:991px) {
+    .wrapper-doa>div:last-child {
+        padding: 25px;
+    }
+}
